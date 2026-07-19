@@ -1,0 +1,3 @@
+export function FeatureCard({ feature }) { return <article className="feature-card"><span>{feature[0]}</span><h3>{feature[1]}</h3><p>{feature[2]}</p><b>↗</b></article>; }
+export function PropertyCard({ property }) { return <article className="property-card"><img src={property.image} alt={property.title} /><div className="tag">For {property.type}</div><div className="property-body"><p>{property.location}</p><h3>{property.title}</h3><span>{property.size}</span><div><b>{property.price}</b><button aria-label={`View ${property.title}`}>↗</button></div></div></article>; }
+export function AgentCard({ agent }) { return <article className="agent-card"><img src={agent.image} alt={agent.name} /><p>{agent.role}</p><h3>{agent.name}</h3><span>{agent.bio}</span></article>; }
