@@ -1,0 +1,27 @@
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  padding: 1.25rem;
+  min-height: 150px;
+}
+
+.quote {
+  margin: 0 0 1rem;
+  color: #0f172a;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.role {
+  color: #64748b;
+}

@@ -1,0 +1,24 @@
+.card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.65rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  border: 1px solid rgba(226,232,240,0.9);
+  box-shadow: 0 14px 28px rgba(15,23,42,0.05);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #0f766e;
+  box-shadow: 0 22px 44px rgba(15,23,42,0.12);
+}
+
+.card h3 {
+  margin: 0 0 0.75rem;
+  color: #0f172a;
+}
+
+.card p {
+  margin: 0;
+  color: #475569;
+}

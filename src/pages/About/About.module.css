@@ -1,0 +1,95 @@
+.about {
+  display: grid;
+  gap: 2rem;
+}
+
+.header {
+  background: rgba(255,255,255,0.92);
+  padding: 2.2rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(226,232,240,0.95);
+  box-shadow: 0 20px 40px rgba(15,23,42,0.05);
+}
+
+.pretitle {
+  color: #0284c7;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.story {
+  background: linear-gradient(180deg, rgba(236,252,255,0.9), #ffffff);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(226,232,240,0.95);
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline div {
+  padding: 1rem;
+  background: var(--surface);
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.valuesSection {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.valuesGrid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.valueCard {
+  background: var(--surface-alt);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(14,165,233,0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(14,165,233,0.12);
+}
+
+.valueCard h3 {
+  margin-top: 0;
+}
+
+.valueCard p {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+}
+
+.teamSection {
+  display: none;
+}
+
+.teamGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .teamGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
