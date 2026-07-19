@@ -1,25 +1,36 @@
-# HomeNest
+# LearnHub — Online Course Platform
 
-A responsive React frontend prototype for a real-estate agency. It includes property discovery, filters, testimonials, FAQs, a validated site-visit enquiry form, and an agency/team page.
+Frontend prototype built with React, React Router DOM, and CSS Modules.
 
-## Run locally
+## Prerequisites
 
-```bash
-npm install
-npm start
-```
+- Install Node.js (includes npm)
+- Restart your terminal or VS Code after installing
 
-Open the local URL shown by Vite (normally `http://localhost:5173`).
+## Setup
 
-## Routes
+1. Install Node.js/npm
+2. Run `npm install`
+3. Run `npm start`
+4. Open `http://localhost:3000`
 
-- `/` — Home
-- `/properties` — Listings, Buy/Rent/Lease filter, testimonials, and FAQ accordion
-- `/contact` — Controlled enquiry form with JavaScript validation
-- `/about` — Mission, team, and company timeline
+## Deliverables
 
-## Structure
+- Fully responsive layout using flexbox/grid and media queries
+- Clean component structure in `/components`, page components in `/pages`, and data inside `/data`
+- Controlled form state and dynamic rendering through props
+- No unnecessary prop drilling in current design; data flows top-down and page-specific state is kept local
+- Repository initialized with feature-based commits
 
-- `src/components` — Shared navigation, footer, and cards
-- `src/pages` — Route-level page components
-- `src/data` — Listing, testimonial, feature, and team data
+## Notes
+
+- `/` — Home landing page
+- `/courses` — Course showcase
+- `/contact` — Enrollment contact form
+- `/about` — About platform and team
+
+## Notes
+
+- Uses controlled form inputs and JS validation on the contact page.
+- Component-driven structure with reusable card components.
+- Responsive layout built with CSS Modules and media queries.
